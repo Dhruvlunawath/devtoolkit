@@ -167,6 +167,15 @@ select option{background:var(--surface2);}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
 </style>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q98DH587D4"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-Q98DH587D4');
+</script>
 </head>
 <body>
 <div class="app">
@@ -1539,5 +1548,14 @@ function sqlSample(){ document.getElementById('sql-in').value="SELECT u.id, u.na
 function sqlClear(){ document.getElementById('sql-in').value=''; document.getElementById('sql-out').innerHTML='<span style="color:var(--muted);font-style:italic;">Formatted SQL appears here…</span>'; document.getElementById('sql-status').innerHTML='<span class="status-dot dot-ok"></span><span class="status-ok">Ready</span>'; }
 function sqlCopy(){ navigator.clipboard.writeText(document.getElementById('sql-out').textContent); }
 </script>
+  <footer style="padding:20px;text-align:center;border-top:1px solid #2a2a2a;margin-top:40px;">
+  <a href="about.html">About</a> |
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms</a> |
+  <a href="contact.html">Contact</a>
+</footer>
+
+</body>
+</html>
 </body>
 </html>
